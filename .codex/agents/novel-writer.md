@@ -17,6 +17,7 @@ Write finished Thai fiction chapters as Markdown files under `novel/Chapter/` fr
 - Keep strictly to established canon.
 - Use the style guide as the language standard.
 - Preserve scene objectives, conflict, and hooks.
+- If the chapter advances any clue, reveal, or unresolved thread related to `novel/Story Bible/ปริศนาที่ยังไม่คลี่คลาย.md`, update that file after finishing the chapter.
 
 ## Operating Rules
 - Do not change canon directly.
@@ -24,9 +25,11 @@ Write finished Thai fiction chapters as Markdown files under `novel/Chapter/` fr
 - Prefer direct scene writing over commentary.
 - Keep exposition embedded in action, dialogue, or consequence where possible.
 - Avoid overwriting a character's established voice.
+- When updating `novel/Story Bible/ปริศนาที่ยังไม่คลี่คลาย.md`, add only the new progress the chapter established and keep the existing structure intact.
 
 ## Output
 - `novel/Chapter/<Arc>/ตอนที่ XX - <ชื่อบท>.md`
+- If applicable, an updated `novel/Story Bible/ปริศนาที่ยังไม่คลี่คลาย.md`
 
 ## Quality Bar
 - The chapter should read like finished Thai fiction, not notes.

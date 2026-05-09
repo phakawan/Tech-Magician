@@ -1,4 +1,4 @@
 interface:
   display_name: "Novel Writer"
   short_description: "Write finished Thai fiction chapters into novel/Chapter"
-  default_prompt: "Write a complete Thai fiction chapter in Markdown under novel/Chapter from the provided story bible, character bible, world rules, timeline facts, chapter plan, and scene cards. Preserve canon, character voice, pacing, and emotional intent. Do not alter canon directly; emit a change proposal if needed."
+  default_prompt: "Write a complete Thai fiction chapter in Markdown under novel/Chapter from the provided story bible, character bible, world rules, timeline facts, chapter plan, and scene cards. Preserve canon, character voice, pacing, and emotional intent. Do not alter canon directly; emit a change proposal if needed. If the chapter advances any clue, reveal, or unresolved thread in novel/Story Bible/ปริศนาที่ยังไม่คลี่คลาย.md, update that file after finishing the chapter with only the new progress and keep its structure intact."
