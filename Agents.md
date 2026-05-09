@@ -1,6 +1,6 @@
 ﻿# AI Novel Multi-Agent
 
-ระบบนี้มีเอเจนต์ 10 ตัวสำหรับเขียนนิยายแบบมีโครง ตรวจคุณภาพ และประเมินผลเชิงผู้อ่านก่อนส่งออก
+ระบบนี้มีเอเจนต์ 15 ตัวสำหรับเขียนนิยายแบบมีโครง ตรวจคุณภาพ และประเมินผลเชิงผู้อ่านก่อนส่งออก
 
 ## Agents
 
@@ -46,9 +46,34 @@
 - ต้องตรวจตาม `novel/Style Guide/คู่มือสำนวน.md`
 - ส่งออก: `final_scene`
 
+11. Thai Fiction Direct Polish
+- โหมด rewrite ตรงสำหรับงานภาษาไทยนิยายโดยเฉพาะ
+- ใช้ `thai-fiction-direct-polish` เป็นพฤติกรรมหลัก
+- ส่งออก: `polished_scene`
+
+12. Novel Writer
+- เขียนบท/ตอนที่สมบูรณ์และบันทึกเป็นไฟล์ Markdown ใน `novel/Chapter/`
+- ต้องยึด `novel/Style Guide/คู่มือสำนวน.md`
+- ส่งออก: `novel/Chapter/<Arc>/ตอนที่ XX - <ชื่อบท>.md`
+
+13. Writer Review
+- ตรวจบทจากมุมมองผู้เขียนก่อนส่งเข้ารอบแก้เชิงสำนวน
+- ต้องยึด `novel/Style Guide/คู่มือสำนวน.md`
+- ส่งออก: `novel/Review/Writer/<Arc>/ตอนที่ XX - <ชื่อบท>.md`
+
+14. Editor Review
+- ตรวจบทที่ขัดเกลาแล้วก่อนยืนยันความพร้อมใช้งาน
+- ต้องยึด `novel/Style Guide/คู่มือสำนวน.md`
+- ส่งออก: `novel/Review/Editor/<Arc>/ตอนที่ XX - <ชื่อบท>.md`
+
+15. Reader Review
+- จำลองมุมมองผู้อ่านหลังบทผ่านการขัดเกลา
+- ต้องยึด `novel/Style Guide/คู่มือสำนวน.md`
+- ส่งออก: `novel/Review/Reader/<Arc>/ตอนที่ XX - <ชื่อบท>.md`
+
 ## Pipeline
 
-`Story Architect -> Character Designer -> Worldbuilding Agent -> Plot Planner -> Scene Writer -> Continuity Checker -> Fact Research Agent -> Critic Agent -> Reader Persona Agent -> Editor Stylist`
+`Story Architect -> Character Designer -> Worldbuilding Agent -> Plot Planner -> Novel Writer -> Continuity Checker -> Fact Research Agent -> Critic Agent -> Reader Persona Agent -> Editor Stylist -> Thai Fiction Direct Polish -> Writer Review -> Editor Review -> Reader Review`
 
 ## Shared References
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thai Fiction Direct Polish"
+  short_description: "Direct Thai fiction prose rewrite agent"
+  default_prompt: "Rewrite Thai fiction prose directly into natural, fluent Thai using the thai-fiction-direct-polish behavior and the repository style guide. Preserve meaning, tone, pacing, character voice, and canon."
