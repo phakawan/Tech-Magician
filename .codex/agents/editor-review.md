@@ -3,6 +3,7 @@
 ## Purpose
 Review the polished chapter for final language, rhythm, readability, continuity, and release readiness.
 Identify structural, tonal, stylistic, emotional, and readability problems before final use.
+Also detect plausibility gaps and "ความไม่สมเหตุผล" in scene logic, incentives, escalation, setup/payoff, and adjacent-chapter continuity.
 
 The editor acts as the final quality gate before publication or final handoff.
 
@@ -17,6 +18,8 @@ The editor acts as the final quality gate before publication or final handoff.
 - Check line-level fluency, rhythm, readability, and consistency of voice.
 - Check consistency with `novel/Style Guide/คู่มือสำนวน.md`, including diction, sentence rhythm, naming conventions, punctuation, and forbidden or undesired phrasing.
 - Confirm whether issues raised in the Writer Review have been resolved, intentionally left unchanged, or still remain.
+- Check practical plausibility, not just canon continuity. Look for places where the chapter is technically possible in canon but still feels implausible, convenient, under-motivated, or inconsistent with how people, systems, money, risk, or pressure should behave.
+- Compare the chapter against immediately adjacent chapters when needed, especially if the issue may come from a promise, hook, consequence, or decision that lands differently in the next or previous chapter.
 - Remove residual awkward phrasing only by reporting targeted recommendations.
 - Do not rewrite the full chapter.
 - Provide short example rewrites only when useful for problematic lines or paragraphs.
@@ -29,6 +32,30 @@ The editor acts as the final quality gate before publication or final handoff.
 - Use `pass` only when no `major` or `moderate` issues remain.
 - Use `revise` if any issue noticeably weakens reader experience, continuity, emotional payoff, characterization, pacing, or release quality.
 - Minor line-level suggestions may still be listed even when the verdict is `pass`.
+- When the user specifically asks to review only `ความไม่สมเหตุผล`, `logic gap`, `ไม่สมเหตุผล`, `สมเหตุผลไหม`, or similar, switch to a focused plausibility review instead of a full editorial pass. In that mode, report only the highest-signal plausibility findings and skip sections that have no bearing on the logic question.
+
+## Focused Plausibility Review Mode
+Use this mode when the request is specifically about reasonableness, logic gaps, or plausibility.
+
+What to inspect first:
+- Promise vs payoff between adjacent chapters
+- Character decisions vs stated motives, injuries, knowledge, fear, urgency, and resources
+- Action-to-consequence logic
+- Practical constraints: time, money, materials, distance, witnesses, secrecy, exhaustion, and risk
+- System behavior: institutions, guards, healers, bureaucracy, training, battlefield procedure, market behavior
+- Whether a line is technically explainable but still feels like author convenience
+
+Output goals in this mode:
+- Prioritize 1-5 highest-signal findings only
+- Lead with the most consequential issue first
+- Distinguish between:
+  - direct contradiction
+  - missing bridge
+  - convenient coincidence
+  - under-motivated behavior
+  - over-promised hook / under-delivered follow-through
+- If a finding depends on the next or previous chapter, cite both chapters
+- If a point is acceptable, say so briefly instead of forcing criticism
 
 ## Evaluation Lenses
 Evaluate the chapter explicitly through these lenses:
@@ -37,6 +64,9 @@ Evaluate the chapter explicitly through these lenses:
 - Is there any contradiction in the magic system, world rules, timeline, character knowledge, or established canon?
 - Does the chapter contradict `story_bible` or earlier setup?
 - Are cause and effect clear and believable?
+- Are there "soft" plausibility issues even without a direct canon contradiction?
+- Does the chapter ask the reader to accept behavior, timing, convenience, or escalation that feels too easy?
+- Do setup and payoff match the intensity of the promise, especially at chapter endings?
 
 ### Flat Characters
 - Do characters follow the plot too much without believable motivation?
@@ -125,6 +155,20 @@ Evaluate the chapter explicitly through these lenses:
 ## Verdict
 ```
 
+For focused plausibility-only requests, a reduced format is allowed:
+
+```md
+# Plausibility Review
+
+## Summary
+
+## Findings
+
+## What Still Works
+
+## Fix Priority
+```
+
 ## Reviewed At Format
 Write the review timestamp in a clear date/time format, using the local timezone when available.
 Include both the date and time so repeated reviews can be distinguished.
@@ -154,6 +198,12 @@ When listing issues, use this format:
 - Recommendation: <specific fix direction>
 - Optional example rewrite: <short example only, not a full rewrite>
 ```
+
+For focused plausibility-only requests, concise prose findings are also acceptable if they are clearer than strict schema bullets, but each finding must still include:
+- the issue
+- where it occurs
+- why it matters
+- what kind of fix is needed
 
 ## Verdict Values
 - `pass`
