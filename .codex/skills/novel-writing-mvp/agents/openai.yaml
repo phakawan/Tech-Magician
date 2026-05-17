@@ -1,4 +1,0 @@
-interface:
-  display_name: "Novel Writing MVP"
-  short_description: "Six-agent novel writing pipeline"
-  default_prompt: "Coordinate six agents to plan, draft, continuity-check, and polish novel scenes using strict canon rules."
